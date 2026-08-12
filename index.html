@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#061a36">
+<meta name="description" content="NEC SOLAR POWER TECH — Reliable Solar & Power Solutions in Nigeria.">
+<title>NEC SOLAR POWER TECH | Reliable Solar & Power Solutions</title>
+<style>
+:root{--navy:#061a36;--green:#08752d;--green2:#19a34a;--gold:#f5bd25;--ink:#0f2037;--muted:#66758a;--bg:#f5f8fb;--line:#e4eaf1}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,system-ui,-apple-system,"Segoe UI",Arial,sans-serif;color:var(--ink);line-height:1.6}
+a{text-decoration:none;color:inherit}.container{width:min(1180px,92%);margin:auto}
+header{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.96);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.nav{height:78px;display:flex;align-items:center;justify-content:space-between;gap:20px}.logo{width:168px;display:block}
+nav{display:flex;align-items:center;gap:25px;font-size:14px;font-weight:800}nav a:hover{color:var(--green)}.menu{display:none;border:0;background:none;font-size:28px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border-radius:999px;padding:14px 22px;font-weight:900;border:0;cursor:pointer;transition:.2s}.btn:hover{transform:translateY(-2px)}
+.gold{background:var(--gold);color:#111}.dark{background:var(--navy);color:#fff}.green{background:var(--green);color:#fff}
+.hero{min-height:700px;color:#fff;background:radial-gradient(circle at 80% 25%,rgba(25,163,74,.28),transparent 30%),linear-gradient(105deg,rgba(3,17,36,.98),rgba(6,26,54,.78)),url("assets/logo.jpeg") center/cover}
+.hero-inner{min-height:700px;display:flex;align-items:center;padding:90px 0}.hero-copy{max-width:760px}
+.eyebrow,.kicker{font-size:12px;font-weight:950;letter-spacing:2px;text-transform:uppercase;color:var(--gold)}
+h1{font-size:clamp(46px,7vw,86px);line-height:.98;letter-spacing:-4px;margin:18px 0 24px}h2{font-size:clamp(34px,5vw,58px);line-height:1.05;letter-spacing:-2px;margin:8px 0 15px}
+h3{line-height:1.2}.hero p{font-size:20px;max-width:680px;color:#e5edf6;margin:0 0 30px}.actions{display:flex;gap:12px;flex-wrap:wrap}
+.hero-note{display:flex;gap:10px;flex-wrap:wrap;margin-top:25px;color:#d7e4f1;font-size:13px}.pill{border:1px solid rgba(255,255,255,.18);padding:8px 12px;border-radius:999px;background:rgba(255,255,255,.05)}
+.stats{position:relative;margin-top:-48px;background:#fff;border-radius:22px;box-shadow:0 18px 55px rgba(6,26,54,.13);padding:28px;display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.stat{text-align:center;border-right:1px solid var(--line)}.stat:last-child{border:0}.stat strong{display:block;font-size:29px;color:var(--navy)}.stat span{font-size:13px;color:var(--muted)}
+section{padding:92px 0}.head{max-width:750px;margin-bottom:42px}.head p{font-size:18px;color:var(--muted)}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:55px;align-items:center}.about p{color:var(--muted);font-size:17px}
+.checks{display:grid;grid-template-columns:1fr 1fr;gap:13px;margin-top:24px}.check{font-weight:800}.check:before{content:"✓";color:var(--green2);margin-right:9px}
+.brand-panel{background:var(--navy);border-radius:30px;padding:42px;color:#fff;box-shadow:0 20px 45px rgba(6,26,54,.15)}.brand-panel img{background:#fff;border-radius:18px;padding:12px;width:230px;margin-bottom:20px}
+.services{background:var(--bg)}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.card{background:#fff;border:1px solid var(--line);border-radius:24px;padding:28px;box-shadow:0 8px 28px rgba(6,26,54,.045);transition:.22s}.card:hover{transform:translateY(-5px);box-shadow:0 18px 35px rgba(6,26,54,.1)}
+.icon{width:54px;height:54px;border-radius:16px;display:grid;place-items:center;background:#eaf7ee;color:var(--green);font-size:25px;margin-bottom:17px}.card p{color:var(--muted);margin-bottom:0}
+.project{min-height:310px;border-radius:25px;padding:30px;color:#fff;display:flex;align-items:flex-end;background:linear-gradient(180deg,rgba(6,26,54,.05),rgba(6,26,54,.95)),linear-gradient(135deg,#123e69,#08752d)}.project:nth-child(2){background:linear-gradient(180deg,rgba(6,26,54,.05),rgba(6,26,54,.95)),linear-gradient(135deg,#0c315c,#b57c0c)}.project:nth-child(3){background:linear-gradient(180deg,rgba(6,26,54,.05),rgba(6,26,54,.95)),linear-gradient(135deg,#164766,#1b8b49)}.project p{color:#dfe8f2;margin-bottom:0}
+.brands{background:#f9fbfd;text-align:center}.brand-list{display:flex;justify-content:center;gap:15px;flex-wrap:wrap;margin-top:28px}.brand-pill{padding:15px 26px;border-radius:999px;background:#fff;border:1px solid var(--line);font-weight:900}
+.cta{background:linear-gradient(135deg,var(--green),#075c28);color:#fff}.cta-box{display:flex;align-items:center;justify-content:space-between;gap:30px}.cta p{max-width:680px;color:#ddf1e4}
+.contact{background:var(--bg)}.contact-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:35px}.contact-card{background:var(--navy);color:#fff;border-radius:28px;padding:35px}.contact-card h3{font-size:25px;margin-top:0}.item{padding:17px 0;border-bottom:1px solid rgba(255,255,255,.12)}.item small{display:block;color:#aebdd0;margin-bottom:4px}.item a,.item strong{font-weight:800}
+form{background:#fff;border-radius:28px;padding:32px;box-shadow:0 12px 40px rgba(6,26,54,.07)}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:15px}
+input,select,textarea{width:100%;padding:14px 15px;border:1px solid #d8e0e9;border-radius:12px;font:inherit;background:#fff}textarea{min-height:135px;resize:vertical}.full{grid-column:1/-1}.small{font-size:12px;color:var(--muted);margin-top:10px}
+footer{background:#031328;color:#b8c4d2;padding:45px 0 22px}.footer-row{display:flex;align-items:center;justify-content:space-between;gap:25px}footer .logo{background:#fff;border-radius:12px;padding:8px}footer p{font-size:13px}.copy{border-top:1px solid rgba(255,255,255,.1);margin-top:28px;padding-top:18px;font-size:12px}
+.float{position:fixed;right:20px;bottom:20px;z-index:80;background:#16a34a;color:#fff;border-radius:999px;padding:14px 19px;font-weight:900;box-shadow:0 12px 30px rgba(0,0,0,.2)}
+@media(max-width:900px){nav{display:none}.menu{display:block}.stats{grid-template-columns:1fr 1fr}.stat:nth-child(2){border:0}.about,.contact-grid{grid-template-columns:1fr}.grid{grid-template-columns:1fr 1fr}.cta-box{flex-direction:column;align-items:flex-start}}
+@media(max-width:580px){.nav{height:70px}.logo{width:142px}.hero,.hero-inner{min-height:650px}h1{letter-spacing:-2.5px}.grid{grid-template-columns:1fr}.stats{padding:20px}.stat{border:0}.stat strong{font-size:23px}.checks,.form-grid{grid-template-columns:1fr}.full{grid-column:auto}section{padding:65px 0}.footer-row{flex-direction:column;align-items:flex-start}}
+</style>
+</head>
+<body>
+<header><div class="container nav">
+<a href="#home"><img class="logo" src="assets/logo.jpeg" alt="NEC SOLAR POWER TECH"></a>
+<nav><a href="#about">About</a><a href="#services">Services</a><a href="#projects">Projects</a><a href="#contact">Contact</a><a class="btn gold" href="#quote">Get a Quote</a></nav>
+<button class="menu" onclick="document.getElementById('contact').scrollIntoView()" aria-label="Menu">☰</button>
+</div></header>
+
+<main>
+<section class="hero" id="home"><div class="container hero-inner"><div class="hero-copy">
+<div class="eyebrow">Clean Energy • Reliable Power</div>
+<h1>Power your world.<br><span style="color:var(--gold)">Empower your life.</span></h1>
+<p>Professional solar, inverter, lithium battery and electrical solutions for homes, businesses, institutions and industrial projects across Nigeria.</p>
+<div class="actions"><a class="btn gold" href="#quote">Get a Free Quote</a><a class="btn dark" href="https://wa.me/2348132669818?text=Hello%20NEC%20Solar%20Power%20Tech,%20I%20would%20like%20a%20quote." target="_blank">WhatsApp Us</a></div>
+<div class="hero-note"><span class="pill">Solar Systems</span><span class="pill">Inverters</span><span class="pill">Lithium Batteries</span><span class="pill">Electrical</span><span class="pill">CCTV</span></div>
+</div></div></section>
+
+<div class="container stats"><div class="stat"><strong>2023</strong><span>Established</span></div><div class="stat"><strong>100+</strong><span>Installations</span></div><div class="stat"><strong>4</strong><span>Major equipment brands</span></div><div class="stat"><strong>24/7</strong><span>Power-focused solutions</span></div></div>
+
+<section id="about"><div class="container about"><div>
+<div class="head"><div class="kicker">About us</div><h2>Reliable power, engineered properly.</h2><p>NEC SOLAR POWER TECH is a renewable-energy and electrical engineering company focused on dependable, affordable and sustainable power solutions.</p></div>
+<p>We design, supply, install, test, commission and maintain solar-energy and electrical systems for residential, commercial, institutional and industrial clients.</p>
+<div class="checks"><div class="check">Professional installation</div><div class="check">Quality equipment</div><div class="check">System testing & commissioning</div><div class="check">Maintenance & support</div></div>
+</div><div class="brand-panel"><img src="assets/logo.jpeg" alt="NEC Solar Power Tech logo"><h3>Reliable Solar & Power Solutions</h3><p style="color:#d9e3ee">Our goal is simple: help customers enjoy cleaner energy, stronger backup power and professionally installed electrical systems.</p></div></div></section>
+
+<section class="services" id="services"><div class="container"><div class="head"><div class="kicker">Our services</div><h2>One team for your power and security needs.</h2><p>From the first design to installation and maintenance, we handle the technical work.</p></div>
+<div class="grid">
+<div class="card"><div class="icon">☀</div><h3>Solar System Installation</h3><p>Residential, commercial and industrial solar design, supply and installation.</p></div>
+<div class="card"><div class="icon">⚡</div><h3>Inverter Installation</h3><p>Hybrid and backup inverter systems sized around your actual loads.</p></div>
+<div class="card"><div class="icon">🔋</div><h3>Lithium Battery Systems</h3><p>Battery supply, installation, protection and system integration.</p></div>
+<div class="card"><div class="icon">🔌</div><h3>Electrical Wiring</h3><p>Conduit and surface wiring, distribution, installations and upgrades.</p></div>
+<div class="card"><div class="icon">📹</div><h3>CCTV Installation</h3><p>Security cameras with professional installation and power-backup integration.</p></div>
+<div class="card"><div class="icon">🛡</div><h3>Electric Fence</h3><p>Electric-fence systems and supporting electrical/security infrastructure.</p></div>
+<div class="card"><div class="icon">💡</div><h3>Solar Street Lighting</h3><p>Standalone solar lighting for streets, compounds and facilities.</p></div>
+<div class="card"><div class="icon">🏢</div><h3>Commercial & Industrial</h3><p>Scalable energy solutions for offices, businesses and industrial facilities.</p></div>
+<div class="card"><div class="icon">🛠</div><h3>Maintenance & Troubleshooting</h3><p>Testing, commissioning, fault finding and preventive maintenance.</p></div>
+</div></div></section>
+
+<section id="projects"><div class="container"><div class="head"><div class="kicker">Selected projects</div><h2>Systems built for real-world demand.</h2><p>A selection of completed work from our portfolio.</p></div>
+<div class="grid">
+<div class="project"><div><h3>Tobiloba L&K Hospital</h3><p>Sapele, Delta State • 20kVA inverter • 30kWh lithium batteries • 2025</p></div></div>
+<div class="project"><div><h3>Uwaneyin Oil & Gas Filling Station</h3><p>Jesse Town, Delta State • 10kVA hybrid inverter • 100kWh lithium batteries • 2025</p></div></div>
+<div class="project"><div><h3>Incoming Eatry & Lounge</h3><p>Coal Camp, Enugu State • 48kVA inverter • 60kWh lithium batteries • 2026</p></div></div>
+</div></div></section>
+
+<section class="brands"><div class="container"><div class="kicker">Equipment brands</div><h2>Technology we install.</h2><div class="brand-list"><span class="brand-pill">Felicity</span><span class="brand-pill">Cworth</span><span class="brand-pill">Deye</span><span class="brand-pill">Growatt</span></div></div></section>
+
+<section class="cta"><div class="container cta-box"><div><div class="kicker">Go solar with confidence</div><h2>Let's design your power solution.</h2><p>Tell us what you need to power and we'll help you plan a system around your appliances, usage, budget and future needs.</p></div><a class="btn gold" href="#quote">Request a Quote</a></div></section>
+
+<section class="contact" id="contact"><div class="container"><div class="head"><div class="kicker">Contact us</div><h2>Let's discuss your project.</h2><p>Call, WhatsApp or send your requirements through the quotation form.</p></div>
+<div class="contact-grid"><div class="contact-card"><h3>NEC SOLAR POWER TECH</h3>
+<div class="item"><small>Phone 1</small><a href="tel:+2348132669818">+2348132669818</a></div>
+<div class="item"><small>Phone 2</small><a href="tel:+2347048329928">+2347048329928</a></div>
+<div class="item"><small>Email</small><a href="mailto:Necpowertech@gmail.com">Necpowertech@gmail.com</a></div>
+<div class="item"><small>Office</small><strong>No 190 Nike Lake Road, before T Junction, Enugu State, Nigeria</strong></div>
+<div class="item"><small>WhatsApp</small><a href="https://wa.me/2348132669818" target="_blank">Chat with us on WhatsApp →</a></div>
+</div>
+<form id="quote" onsubmit="sendQuote(event)"><h3 style="margin-top:0">Request a Quote</h3><p style="color:var(--muted);font-size:14px">Your request will open in WhatsApp with the details filled in.</p>
+<div class="form-grid"><input id="name" required placeholder="Full name"><input id="phone" required placeholder="Phone number"><input id="location" placeholder="Project location"><select id="service"><option value="">Select service</option><option>Solar System</option><option>Inverter & Battery</option><option>Electrical Wiring / Installation</option><option>CCTV</option><option>Electric Fence</option><option>Solar Street Lighting</option><option>Maintenance</option></select><textarea id="message" class="full" placeholder="Tell us about your appliances, project size, power needs or anything else..."></textarea><button class="btn dark full" type="submit">Send Quote Request on WhatsApp</button></div>
+<div class="small">WhatsApp will open on your device with your request ready to send.</div></form></div></div></section>
+</main>
+
+<a class="float" href="https://wa.me/2348132669818?text=Hello%20NEC%20Solar%20Power%20Tech,%20I%20need%20a%20quote." target="_blank">WhatsApp</a>
+<footer><div class="container"><div class="footer-row"><img class="logo" src="assets/logo.jpeg" alt="NEC Solar Power Tech"><div><strong>NEC SOLAR POWER TECH</strong><p>Reliable Solar & Power Solutions</p></div></div><div class="copy">© 2026 NEC SOLAR POWER TECH. All rights reserved. • Enugu State, Nigeria</div></div></footer>
+
+<script>
+function sendQuote(e){
+ e.preventDefault();
+ const name=document.getElementById('name').value.trim();
+ const phone=document.getElementById('phone').value.trim();
+ const location=document.getElementById('location').value.trim();
+ const service=document.getElementById('service').value.trim();
+ const message=document.getElementById('message').value.trim();
+ const text='Hello NEC SOLAR POWER TECH,%0A%0AI would like a quotation.%0A%0AName: '+encodeURIComponent(name)+'%0APhone: '+encodeURIComponent(phone)+'%0ALocation: '+encodeURIComponent(location)+'%0AService: '+encodeURIComponent(service)+'%0AProject details: '+encodeURIComponent(message);
+ window.open('https://wa.me/2348132669818?text='+text,'_blank');
+}
+</script>
+</body></html>
